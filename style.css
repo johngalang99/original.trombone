@@ -1,0 +1,347 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+	--yellow: #FBC02D;
+}
+
+*,
+*::before;
+*::after{
+	box-sizing: border-box;
+}
+
+a { color:black }
+
+a:visited { 
+	text-decoration: none; 
+	color:black; 
+}
+
+body{
+	background-color: #eee;
+	font-family: 'Lato', sans-serif;
+}
+
+.container{
+	padding-top: 70px;
+	margin: 0 auto;
+}
+
+@media (max-width: 480px){
+	.container{
+		padding-top: 60px;
+		margin: 0 auto;
+	}
+}
+
+img{
+	max-height: 40px;
+	padding: 10px 0;
+	padding-right: 0px;
+	width: auto;
+}
+
+@media (max-width: 480px){
+	img{
+		max-height: 30px;
+		padding: 5px 0;
+	}
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+ }
+
+ @media (max-width: 480px){
+ 	header{
+ 		min-height: 60px;
+ 		display: flex;
+ 		flex-direction: column;
+ 	}
+ }
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 20px;
+	text-align: right;
+}
+
+@media (max-width: 480px){
+	nav li{
+		text-align: left;
+
+	}
+}
+
+nav ul{
+}
+
+@media (max-width: 480px){
+	nav ul{
+		padding: 0;
+		margin: 5px;
+		justify-content: center;
+	}
+}
+
+nav li a{
+	text-decoration: none;
+}
+
+nav li a:visited{
+	text-decoration: none;
+}
+
+#hero h2{
+	text-align: center;
+}
+
+@media (max-width: 480px){
+	#hero h2{
+		margin: 10px;
+	}
+}
+
+#email{
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 20px;
+	border-radius: 5;
+}
+
+#submit{
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	background-color: var(--yellow);
+	border-color: transparent;
+	height: 35px;
+	width: 130x;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 700;
+	transition: transform 200ms;
+}
+
+#features{
+	margin: auto;
+}
+
+@media (max-width: 480px){
+	#features{
+		padding-top: 20px;
+	}
+}
+
+.desc > h2,p{
+	margin: 0;
+	max-width: 700px;
+}
+
+@media (max-width: 480px){
+	.desc > *{
+		text-align: center;
+	}
+}
+
+.desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.grid{
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 480px){
+	.grid{
+		padding-top: 10px;
+	}
+}
+
+.icon{
+	padding: 40px;
+	min-width: 60px;
+	align-content: center;
+}
+
+@media (max-width: 480px){
+	.icon{
+		display: none;
+	}
+}
+
+i{
+	font-size: 45px;
+	color: var(--yellow);
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+
+@media (max-width: 480px){
+	#how-it-works{
+		margin-top: 30px;
+		height: 200px;
+	}
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+@media (max-width: 480px){
+	#how-it-works > iframe {
+		max-width: 350px;
+		height: 100%;
+	}
+}
+
+#pricing{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 15px;	
+}
+
+.price{
+	display: flex;
+	flex-direction: column;
+  	margin: 10px;
+  	border: 1px solid #000;
+  	border-radius: 3px;
+	width: 300px;
+}
+
+.price div{
+	background-color: gray;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.price h2{
+	text-align: center;
+}
+
+.price ol{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+
+button{
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	background-color: var(--yellow);
+	border-color: transparent;
+	height: 35px;
+	width: 130x;
+	cursor: pointer;
+}
+
+@media (max-width: 480px){
+	#pricing{
+		flex-direction: column;
+	}
+
+	.price{
+		display: block;
+		margin: auto;
+	}
+
+	.price h2,ol{
+		margin: 5px;
+	}
+
+	button{
+		margin-bottom: 6px;
+	}
+}
+
+footer ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+footer li{
+	text-align: right;
+}
+
+footer li a{
+	text-decoration: none;
+}
+
+
+footer {
+  margin: 30px -10px -10px -10px;
+  background-color: #ddd;
+  padding: 20px;
+
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  color: #444;
+}
+
+@media (max-width: 480px){
+	footer{
+		margin: 10px -10px -10px -10px;
+		padding: 7px;
+	}
+
+	footer > ul{
+		margin: 5px 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
