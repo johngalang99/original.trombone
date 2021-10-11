@@ -1,16 +1,16 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
-
 :root {
 	--yellow: #FBC02D;
 }
 
 *,
-*::before;
+*::before,
 *::after{
 	box-sizing: border-box;
 }
 
-a { color:black }
+a {
+	color:black 
+}
 
 a:visited { 
 	text-decoration: none; 
@@ -38,7 +38,6 @@ img{
 	max-height: 40px;
 	padding: 10px 0;
 	padding-right: 0px;
-	width: auto;
 }
 
 @media (max-width: 480px){
@@ -58,15 +57,15 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: #eee;
- }
+}
 
- @media (max-width: 480px){
- 	header{
- 		min-height: 60px;
- 		display: flex;
- 		flex-direction: column;
- 	}
- }
+@media (max-width: 480px){
+	header{
+		min-height: 60px;
+		display: flex;
+		flex-direction: column;
+	}
+}
 
 nav li{
 	list-style: none;
@@ -80,9 +79,6 @@ nav li{
 		text-align: left;
 
 	}
-}
-
-nav ul{
 }
 
 @media (max-width: 480px){
@@ -189,10 +185,10 @@ i{
 }
 
 #how-it-works {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  height: 350px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	height: 350px;
 }
 
 @media (max-width: 480px){
@@ -203,8 +199,8 @@ i{
 }
 
 #how-it-works > iframe {
-  max-width: 560px;
-  width: 100%;
+	max-width: 560px;
+	width: 100%;
 }
 
 @media (max-width: 480px){
@@ -225,9 +221,9 @@ i{
 .price{
 	display: flex;
 	flex-direction: column;
-  	margin: 10px;
-  	border: 1px solid #000;
-  	border-radius: 3px;
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 3px;
 	width: 300px;
 }
 
@@ -296,27 +292,27 @@ footer li a{
 
 
 footer {
-  margin: 30px -10px -10px -10px;
-  background-color: #ddd;
-  padding: 20px;
+	margin: 30px -10px -10px -10px;
+	background-color: #ddd;
+	padding: 20px;
 
 }
 
 footer > ul {
-  display: flex;
-  justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 footer > ul > li {
-  padding: 0 10px;
+	padding: 0 10px;
 }
 
 footer > span {
-  margin-top: 5px;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 1em;
-  color: #444;
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1em;
+		color: #444;
 }
 
 @media (max-width: 480px){
@@ -329,7 +325,7 @@ footer > span {
 		margin: 5px 0;
 		}
 	}
-}
+	
 
 
 
